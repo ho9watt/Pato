@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/mainActivity_championlist_btn"
+        android:title="리스트"
+        android:icon="@drawable/list_icon"
+        app:showAsAction="always"
+        />
+
+    <item
+        android:id="@+id/mainActivity_write_btn"
+        android:title="리스트"
+        android:icon="@drawable/write_icon"
+        app:showAsAction="always"
+        />
+
+</menu>

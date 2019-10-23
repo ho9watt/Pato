@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/patchnoteActivity_patchlist_linear_main">
+
+    <LinearLayout
+        android:id="@+id/patchnoteActivity_patchlist_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/patchNoteFragment_patch_recycleview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </androidx.recyclerview.widget.RecyclerView>
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/patchNoteFragment_progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/patchNoteFragment_netCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="인터넷에 접속해주세요."
+        android:visibility="gone"
+        android:textSize="14sp"/>
+
+</LinearLayout>

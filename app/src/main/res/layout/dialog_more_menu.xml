@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/dialog_moreMenu_replys"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="댓글 달기"
+            android:textSize="14sp"
+            android:background="@drawable/linear_border_selector"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp">
+
+        <Button
+            android:id="@+id/dialog_moreMenu_remove"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="삭제"
+            android:textSize="14sp"
+            android:background="@drawable/linear_border_selector"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp">
+
+        <Button
+            android:id="@+id/dialog_moreMenu_report"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="신고"
+            android:textSize="14sp"
+            android:background="@drawable/linear_border_selector"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <RadioGroup
+        android:id="@+id/dialog_report_radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/dialog_report_rb1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="음란 잔인 폭행"
+            android:textSize="14sp"/>
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/dialog_report_rb2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="비하 욕설"
+            android:textSize="14sp"/>
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/dialog_report_rb3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="부적절한 홍보 저작권침해"
+            android:textSize="14sp"/>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/dialog_report_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="신고하기"
+        android:textSize="14sp"
+        android:background="@drawable/linear_border_selector"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"/>
+
+</LinearLayout>

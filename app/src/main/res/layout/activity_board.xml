@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.pato.BoardActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/boardActivity_replys_bottomlayout">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/boardActivity_replys"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true">
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/boardActivity_replys_bottomlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="-4dp"
+        android:layout_marginRight="-4dp"
+        android:layout_marginBottom="-2dp"
+        android:background="@drawable/design_linear_border">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="20">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="19"
+                android:layout_gravity="center">
+
+                <EditText
+                    android:id="@+id/boardNoteActivity_replys_edit"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:hint="지나친 개인홍보 비난 비하 금지"
+                    android:textSize="18sp"
+                    android:maxLength="300"
+                    android:background="@android:color/transparent"
+                    android:singleLine="true"
+                    android:paddingLeft="9dp"
+                    android:textCursorDrawable="@drawable/design_editcursor_blue"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="bottom"
+                android:paddingTop="3dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:paddingBottom="3dp">
+
+                <Button
+                    android:id="@+id/boardActivity_replys_btn"
+                    android:layout_width="50dp"
+                    android:layout_height="45dp"
+                    android:text="입력"
+                    android:layout_marginRight="4dp"
+                    android:textSize="14sp"
+                    android:background="@drawable/design_button_selector"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

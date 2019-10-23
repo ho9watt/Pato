@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/contestFragment_main_linear_1">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/contestFragment_lck_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginRight="3dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/contestFragment_netCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="인터넷에 접속해주세요."
+        android:textSize="14sp"
+        android:visibility="gone"/>
+
+    <ProgressBar
+        android:id="@+id/contestFragment_progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+</LinearLayout>
